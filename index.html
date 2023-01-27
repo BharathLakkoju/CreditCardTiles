@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            padding: 0;
+            margin: 0;
+            top: 0;
+            position: absolute;
+            overflow-x: hidden;
+        }
+        .sec1 {
+            text-align: center;
+            font-size: 60px;
+            font-family: 'Alegreya Sans', sans-serif;
+        }
+        .sec2 {
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            height: 700px;
+        }
+        span {
+            padding: 1%;
+            font-size: 85px;
+            color: transparent;
+            font-family: 'Alegreya Sans', sans-serif;
+            -webkit-text-stroke: 2px black;
+            opacity: 60%;
+            animation: marquee 10s linear infinite;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            z-index: 1;
+            transform: translateY(-400px);
+            font-family: 'Inter', sans-serif;
+        }
+        .scroll {
+            z-index: 0;
+            overflow: hidden;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            white-space: nowrap;
+        }
+        .card {
+            width: 496px;
+            height: 288px;
+            stroke: 5px solid #ffffff;
+            stroke-opacity: 10%;
+            border-radius: 24px;
+            background: url(https://products.ls.graphics/mesh-gradients/images/21.-Columbia-Blue_1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            box-shadow: 1px 1px 100px #999999;
+            padding: 16px;
+        }
+        .left {
+            transform: translateX(-200px);
+            background: url(https://products.ls.graphics/mesh-gradients/images/08.-Violet-Blue.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .right {
+            transform: translateX(200px);
+            background: url(https://products.ls.graphics/mesh-gradients/images/22.-Shalimar_1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        @keyframes marquee {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+        .cardno {
+            margin: 10% 0 0 0;
+        }
+        .cardno > * {
+            margin: 5px;
+        }
+        .no {
+            font-size: 40px;
+            letter-spacing: 3px;
+        }
+        .exp {
+            display: flex;
+            justify-content: flex-start;
+            gap: 10%;
+            margin: 5% 0 0 0;
+        }
+        .exp > div > * {
+            margin: 5px;
+        }
+        .visasvg {
+            display: flex;
+            justify-content: end;
+            transform: translateY(-70px);
+            z-index: 1;
+        }
+        .visasvg img {
+            width: 80px;
+            height: 80px;
+        }
+        h3 {
+            font-weight: 750;
+            font-size: 24px;
+        }
+        .cardsec1 {
+            display: flex;
+            justify-content: space-between;
+        }
+        .cardsec1 > div > * {
+            margin: 5px;
+        }
+        .cardsec1 img {
+            width: 40px;
+            height: 40px;
+            transform: rotate(90deg);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="sec2">
+            <div class="scroll">
+                <span>Credit card</span>
+                <span aria-hidden="true">Credit &ensp;card</span>
+                <span aria-hidden="true">Credit &ensp;card</span>
+                <span aria-hidden="true">Credit &ensp;card</span>
+                <span aria-hidden="true">Credit &ensp;card</span>
+                <span aria-hidden="true">Credit &ensp;card</span>
+                <span aria-hidden="true">Credit &ensp;card</span>
+                <span aria-hidden="true">Credit &ensp;card</span>
+                <span aria-hidden="true">Credit &ensp;card</span>
+                <span aria-hidden="true">Credit &ensp;card</span>
+            </div>
+            <div class="scroll">
+                <span>Credit card</span>
+                <span aria-hidden="true">Credit &emsp;card</span>
+                <span aria-hidden="true">Credit &emsp;card</span>
+                <span aria-hidden="true">Credit &emsp;card</span>
+                <span aria-hidden="true">Credit &emsp;card</span>
+                <span aria-hidden="true">Credit &emsp;card</span>
+                <span aria-hidden="true">Credit &emsp;card</span>
+                <span aria-hidden="true">Credit &emsp;card</span>
+                <span aria-hidden="true">Credit &emsp;card</span>
+                <span aria-hidden="true">Credit &emsp;card</span>
+                <span aria-hidden="true">Credit &emsp;card</span>
+            </div>
+            <div class="scroll">
+                <span>Credit card</span>
+                <span aria-hidden="true">Credit &nbsp;card</span>
+                <span aria-hidden="true">Credit &nbsp;card</span>
+                <span aria-hidden="true">Credit &nbsp;card</span>
+                <span aria-hidden="true">Credit &nbsp;card</span>
+                <span aria-hidden="true">Credit &nbsp;card</span>
+                <span aria-hidden="true">Credit &nbsp;card</span>
+                <span aria-hidden="true">Credit &nbsp;card</span>
+                <span aria-hidden="true">Credit &nbsp;card</span>
+                <span aria-hidden="true">Credit &nbsp;card</span>
+                <span aria-hidden="true">Credit &nbsp;card</span>
+                <span aria-hidden="true">Credit &nbsp;card</span>
+                <span aria-hidden="true">Credit &nbsp;card</span>
+                <span aria-hidden="true">Credit &nbsp;card</span>
+                <span aria-hidden="true">Credit &nbsp;card</span>
+            </div>
+            <div class="scroll">
+                <span>Credit card</span>
+                <span aria-hidden="true">Credit &ensp;card</span>
+                <span aria-hidden="true">Credit &ensp;card</span>
+                <span aria-hidden="true">Credit &ensp;card</span>
+                <span aria-hidden="true">Credit &ensp;card</span>
+                <span aria-hidden="true">Credit &ensp;card</span>
+                <span aria-hidden="true">Credit &ensp;card</span>
+                <span aria-hidden="true">Credit &ensp;card</span>
+                <span aria-hidden="true">Credit &ensp;card</span>
+            </div>
+            <div class="container">
+                <div class="card left">
+                    <div class="cardsec1">
+                        <div>
+                            <h3>John Carter</h3>
+                        </div>
+                        <div class="wifisvg">
+                            <img src="wifi-svgrepo-com.svg" alt="wifi" />
+                        </div>
+                    </div>
+                    <div class="cardno">
+                        <h5>Card Number</h5>
+                        <h3 class="no">8252&nbsp;3543&nbsp;3452</h3>
+                    </div>
+                    <div class="exp">
+                        <div>
+                            <h5>Expiry Date</h5>
+                            <h3>03 / 09</h3>
+                        </div>
+                        <div>
+                            <h5>CVV</h5>
+                            <h3>XXX</h3>
+                        </div>
+                    </div>
+                    <div class="visasvg">
+                        <img src="visa-svgrepo-com.svg" alt="VISA" />
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cardsec1">
+                        <div>
+                            <h3>John Carter</h3>
+                        </div>
+                        <div class="wifisvg">
+                            <img src="wifi-svgrepo-com.svg" alt="wifi" />
+                        </div>
+                    </div>
+                    <div class="cardno">
+                        <h5>Card Number</h5>
+                        <h3 class="no">8252&nbsp;3543&nbsp;3452</h3>
+                    </div>
+                    <div class="exp">
+                        <div>
+                            <h5>Expiry Date</h5>
+                            <h3>03 / 09</h3>
+                        </div>
+                        <div>
+                            <h5>CVV</h5>
+                            <h3>XXX</h3>
+                        </div>
+                    </div>
+                    <div class="visasvg">
+                        <img src="visa-svgrepo-com.svg" alt="VISA" />
+                    </div>
+                </div>
+                <div class="card right">
+                    <div class="cardsec1">
+                        <div>
+                            <h3>John Carter</h3>
+                        </div>
+                        <div class="wifisvg">
+                            <img src="wifi-svgrepo-com.svg" alt="wifi" />
+                        </div>
+                    </div>
+                    <div class="cardno">
+                        <h5>Card Number</h5>
+                        <h3 class="no">8252&nbsp;3543&nbsp;3452</h3>
+                    </div>
+                    <div class="exp">
+                        <div>
+                            <h5>Expiry Date</h5>
+                            <h3>03 / 09</h3>
+                        </div>
+                        <div>
+                            <h5>CVV</h5>
+                            <h3>XXX</h3>
+                        </div>
+                    </div>
+                    <div class="visasvg">
+                        <img src="visa-svgrepo-com.svg" alt="VISA" />
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
